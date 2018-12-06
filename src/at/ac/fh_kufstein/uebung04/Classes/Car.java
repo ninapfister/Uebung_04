@@ -11,5 +11,12 @@ public class Car
     {
         System.out.println(" Die Geschwindigkeit beträgt " + this.speed);
     }
+
+    public Car (String color, int wheels, double speed)
+    {
+        this.color = color;
+        this.wheels = wheels;
+        this.speed = speed;
+    }
 }
 
