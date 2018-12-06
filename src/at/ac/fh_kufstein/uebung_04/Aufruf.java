@@ -9,5 +9,11 @@ public class Aufruf
         Car auto1 = new Car("rot", 4, 200.0 );
 
         auto1.currentSpeed();
+
+        auto1.accelerate(60.0);
+        auto1.currentSpeed();
+
+        auto1.slowdown(60.0);
+        auto1.currentSpeed();
     }
 }

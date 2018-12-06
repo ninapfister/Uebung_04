@@ -18,5 +18,32 @@ public class Car
         this.wheels = wheels;
         this.speed = speed;
     }
+
+    public String getColor ()
+    {
+        return color;
+    }
+
+    public int getWheels ()
+    {
+        return wheels;
+    }
+
+    public double getSpeed()
+    {
+        return speed;
+    }
+
+    public void accelerate(double geschwindigkeit)
+    {
+        this.speed = this.speed+geschwindigkeit;
+        System.out.println(speed);
+    }
+
+    public void slowdown(double geschwindigkeit)
+    {
+        this.speed = this.speed-geschwindigkeit;
+        System.out.println(speed);
+    }
 }
 
