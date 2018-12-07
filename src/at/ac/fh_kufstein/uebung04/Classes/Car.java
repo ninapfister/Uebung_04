@@ -7,9 +7,15 @@ public class Car
     double speed;
 
 
+
     public void currentSpeed()
     {
         System.out.println(" Die Geschwindigkeit beträgt " + this.speed);
+    }
+
+    public Car()
+    {
+
     }
 
     public Car (String color, int wheels, double speed)
