@@ -1,6 +1,6 @@
 package at.ac.fh_kufstein.uebung04.Classes;
 
-public class Car
+public abstract class Car
 {
     String color;
     int wheels;
@@ -30,14 +30,29 @@ public class Car
         return color;
     }
 
+    public void setColor(String color)
+    {
+        this.color = color;
+    }
+
     public int getWheels ()
     {
         return wheels;
     }
 
+    public void setWheels(int wheels)
+    {
+        this.wheels = wheels;
+    }
+
     public double getSpeed()
     {
         return speed;
+    }
+
+    public void setSpeed(double speed)
+    {
+        this.speed = speed;
     }
 
     public void accelerate(double geschwindigkeit)
@@ -51,5 +66,7 @@ public class Car
         this.speed = this.speed-geschwindigkeit;
         System.out.println(speed);
     }
+
+    public abstract void slowDown(double geschwindigkeit);
 }
 

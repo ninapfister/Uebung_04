@@ -21,5 +21,10 @@ public class Aufruf
         bike1.accelerate(10.0);
         bike1.currentSpeed();
 
+        Bike bike2 = new Bike("yellow", 2, 20, 40);
+        bike2.accelerate(100);
+        bike2.slowDown(100);
+        bike2.currentSpeed();
+
     }
 }
